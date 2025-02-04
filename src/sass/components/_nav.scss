@@ -1,0 +1,85 @@
+@use "../utilities/utilities.scss" as *;
+
+.burger-btn {
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	padding: 1em;
+	border: 1px solid transparent;
+	background: none;
+	z-index: 1000;
+	cursor: pointer;
+
+	&__box {
+		position: relative;
+		width: 40px;
+		height: 40px;
+	}
+
+	&:focus {
+		outline: none;
+		border: 1px solid $black;
+		border-radius: 5px;
+	}
+
+	&__bars {
+		position: absolute;
+		width: 100%;
+		height: 6px;
+		background-color: $white;
+		border: 1px solid $black;
+		border-radius: 5px;
+		top: 18px;
+		left: -50%;
+		transform: translateX(50%);
+
+		&--top {
+			top: 5px;
+		}
+
+		&--bottom {
+			top: 30px;
+		}
+	}
+}
+
+.nav {
+	&__desktop {
+		display: none;
+	}
+	&__mobile {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100vh;
+		background-color: $main-color;
+		transform: translateX(-100%);
+		transition: transform 0.3s;
+		z-index: 100;
+
+		.nav__moblie-link {
+			display: block;
+			text-align: center;
+			width: 40%;
+			margin: 1em 0;
+			padding: 0.5em 1em;
+			width: 200px;
+			color: $white;
+			border: 1px solid transparent;
+			font-size: 3rem;
+
+			&:focus {
+				outline: none;
+				border: 1px solid $black;
+				border-radius: 5px;
+			}
+		}
+
+		&--active {
+			transform: translateX(0);
+		}
+	}
+}

@@ -9,6 +9,7 @@
 html,
 body {
 	height: 100%;
+	font-family: "Raleway", sans-serif;
 }
 
 html {
@@ -43,4 +44,10 @@ textarea {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
 }

@@ -1,0 +1,120 @@
+@use "../utilities/colors" as *;
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 75vh;
+	background-image: url("../../../dist/img/heroBg_small.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: -10;
+
+	&__text-box {
+		text-align: center;
+		padding: 2em 3em;
+		color: $white;
+	}
+
+	&__heading-name {
+		font-size: 2.8rem;
+		margin-bottom: 0.5em;
+	}
+
+	&__heading-text {
+		font-size: 3.4rem;
+	}
+
+	&__hero-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: #000000a9;
+		z-index: -5;
+	}
+}
+
+.aboutus {
+	padding: 4em 2em;
+
+	&__section-title {
+		position: relative;
+		font-size: 3rem;
+		text-transform: uppercase;
+		font-weight: 400;
+		text-align: center;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 50px;
+			height: 3px;
+			background-color: $main-color;
+		}
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		padding: 1em;
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+		margin: 2em 0;
+	}
+
+	&__heading {
+		font-size: 2rem;
+		margin-bottom: 0.8em;
+		color: $main-color;
+	}
+
+	&__text {
+		font-size: 1.5rem;
+		line-height: 24px;
+		margin: 0.5em 0;
+	}
+}
+
+.adventure {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	width: 100%;
+	padding: 2em;
+	background-image: url("../../../dist/img/adventureBg_small.jpg");
+	background-size: cover;
+	background-position: center;
+	z-index: -5;
+
+	&__hero-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #0000007a;
+		z-index: -10;
+	}
+
+	&__text {
+		text-align: center;
+		font-size: 2.2rem;
+		color: $white;
+		font-weight: 600;
+		border: 1px solid $secondary-color;
+		padding: 1em 1.4em;
+	}
+
+}
