@@ -15,6 +15,7 @@
 		<title>Forest Group</title>
 	</head>
 	<body>
+		<!-- Nav section -->
 		<button class="burger-btn">
     <div class="burger-btn__box">
         <div class="burger-btn__bars burger-btn__bars--top"></div>
@@ -56,7 +57,7 @@
 			<!-- aboutus section -->
 			<section class="aboutus" id="aboutus">
 				<div class="wrapper">
-					<h2 class="aboutus__section-title">o nas</h2>
+					<h2 class="section-title">o nas</h2>
 
 					<div class="aboutus__box">
 						<img
@@ -84,9 +85,69 @@
 				<p class="adventure__text">Przygoda dla całej rodziny</p>
 			</section>
 
-            <!-- Offers section -->
-             <section class="offers"></section>
+			<!-- Offers section -->
+			<section class="offers" id="offers">
+				<div class="wrapper">
+					<h2 class="section-title">oferta</h2>
+					<p class="offers__text">
+						Wybierz jedną z naszych wsplaniałych ofert!
+					</p>
+
+					<div class="offers__card-box">
+						<div class="offers__card">
+							<h3 class="offers__card-title">Demo</h3>
+							<p class="offers__card-price">$0</p>
+							<div class="offers__card-description-box">
+								<p class="offers__card-description"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+								<p class="offers__card-description"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+								<p class="offers__card-description offers__card-description--off"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
+								<p class="offers__card-description offers__card-description--off"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
+								<p class="offers__card-description offers__card-description--off"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
+							</div>
+
+							<button class="offers__card-btn btn-animation">Wybierz</button>
+						</div>
+					
+						<div class="offers__card">
+							<h3 class="offers__card-title">Standard</h3>
+
+							<p class="offers__card-price">$99</p>
+
+							<div class="offers__card-description-box">
+								<p class="offers__card-description"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+								<p class="offers__card-description"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+								<p class="offers__card-description"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+								<p class="offers__card-description offers__card-description--off"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
+								<p class="offers__card-description offers__card-description--off"><i class="fa-solid fa-minus"></i> opcja poza pakietem</p>
+							</div>
+							<button class="offers__card-btn btn-animation">Wybierz</button>
+						</div>
+
+						<div class="offers__card">
+							<h3 class="offers__card-title">Premium</h3>
+
+							<p class="offers__card-price">$299</p>
+							<div class="offers__card-description-box">
+								<p class="offers__card-description"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+								<p class="offers__card-description"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+								<p class="offers__card-description"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+								<p class="offers__card-description"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+								<p class="offers__card-description"><i class="fa-solid fa-check"></i> opcja w pakiecie</p>
+							</div>
+
+							<button class="offers__card-btn btn-animation">Wybierz</button>
+						</div>
+					</div>
+
+					<p class="offers__text">Nie znalazłeś oferty dla siebie? Sprawdź więcej <a href="./offer.html" class="offers__link link-animation">Ofert</a></p>
+				</div>
+			</section>
 		</main>
+
+		<footer class="footer">
+	<div class="wrapper"></div>
+</footer>
+
 		<script src="./dist/js/main.min.js"></script>
 	</body>
 </html>

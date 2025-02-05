@@ -1,0 +1,53 @@
+@use "./colors" as *;
+
+.btn-animation {
+	position: relative;
+	transition: background-color 0.3s;
+	overflow: hidden;
+	z-index: 0;
+
+	&::before {
+		display: block;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 8px;
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform 0.3s, color 0.3s;
+		z-index: -1;
+	}
+
+	&:hover::before {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+}
+
+.link-animation {
+	position: relative;
+	z-index: 0;
+	transition: color 0.3s;
+
+	&:hover {
+		color: $white;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: $main-color;
+		z-index: -5;
+	}
+
+	&:hover::after {
+		height: 100%;
+	}
+}
