@@ -3,7 +3,7 @@
 .burger-btn {
 	position: fixed;
 	right: 20px;
-	top: 20px;
+	top: 9px;
 	padding: 1em;
 	border: 1px solid transparent;
 	background: none;
@@ -32,23 +32,68 @@
 		top: 18px;
 		left: -50%;
 		transform: translateX(50%);
+		transition: transform 0.3s, display 0.3s;
 
-		&--top {
+		&-top {
 			top: 5px;
 		}
 
-		&--bottom {
+		&-bottom {
 			top: 30px;
+		}
+	}
+
+	&--active {
+		.burger-btn__bars {
+			border: 1px solid transparent;
+			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+			&-top {
+				transform: translate(50%, 210%) rotate(-45deg);
+			}
+
+			&-middle {
+				display: none;
+			}
+
+			&-bottom {
+				transform: translate(50%, -210%) rotate(45deg);
+			}
 		}
 	}
 }
 
 .nav {
-	&__desktop {
+	&__desktop-section {
 		display: none;
 	}
+
+	&__logo {
+		position: fixed;
+		top: 0;
+		left: 0;
+		padding: 0.8em;
+		background-color: $white;
+		width: 100%;
+		font-size: 3rem;
+		box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+		z-index: 10;
+
+		&-link {
+			color: $black;
+			font-weight: 800;
+			transition: color .3s;
+		}
+
+		&-link:hover {
+			color: $main-color;
+		}
+	}
+
 	&__mobile {
 		position: fixed;
+		top: 0;
+		left: 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -68,13 +113,13 @@
 			padding: 0.5em 1em;
 			width: 200px;
 			color: $white;
-			border: 1px solid transparent;
+			border-bottom: 1px solid $white;
 			font-size: 3rem;
 
 			&:focus {
 				outline: none;
 				border: 1px solid $black;
-				border-radius: 5px;
+				border-radius: 2px;
 			}
 		}
 

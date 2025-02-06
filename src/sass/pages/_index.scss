@@ -9,7 +9,6 @@
 	background-image: url("../../../dist/img/heroBg_small.jpg");
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
 	z-index: -10;
 
 	&__text-box {
@@ -124,7 +123,8 @@
 	&__text {
 		text-align: center;
 		margin: 2.5em 0;
-		font-size: 1.8rem;
+		font-size: 2rem;
+		font-weight: 500;
 		line-height: 25px;
 	}
 
@@ -136,24 +136,26 @@
 	}
 
 	&__card {
-		margin: 3em 0;
-		padding: 2em;
-		width: 90%;
+		margin: 4em 0;
+		padding: 1em;
+		width: 80%;
 		min-height: 400px;
 		background-color: $secondary-color;
 		color: $white;
 		border-radius: 15px;
 		box-shadow: rgba(0, 0, 0, 0.418) 0px 10px 30px,
 			rgba(0, 0, 0, 0.22) 0px 10px 10px;
+		transition: transform 0.3s;
 
 		&-title {
 			text-align: center;
+			margin-top: 1em;
 			font-size: 3rem;
 			font-weight: 400;
 		}
 
 		&-price {
-			margin: 0.5em;
+			margin: 0.8em 0;
 			text-align: center;
 			font-size: 4rem;
 			font-weight: bold;
@@ -164,7 +166,6 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: start;
-			padding: 1em 0;
 			line-height: 1.9em;
 			font-size: 1.8rem;
 		}
@@ -184,8 +185,9 @@
 			display: block;
 			font-size: 2rem;
 			font-weight: 600;
-			margin: 1em auto;
+			margin: 1.5em auto;
 			padding: 0.5em 1em;
+			border: 1px solid $white;
 			border-radius: 8px;
 			background-color: $white;
 			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -196,9 +198,13 @@
 			}
 
 			&::before {
-				background-color: $secondary-color;
+				background-color: $main-color;
 			}
 		}
+	}
+
+	&__card:hover {
+		transform: scale(1.1);
 	}
 
 	&__link {

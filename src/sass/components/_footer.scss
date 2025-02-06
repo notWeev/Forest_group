@@ -1,5 +1,57 @@
 @use "../utilities/utilities.scss" as *;
 
 .footer {
+	color: $black;
 	background-color: $grey;
+
+	.wrapper {
+		padding: 0em 2em;
+	}
+
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__box-company {
+		margin: 1em 0;
+		color: $main-color;
+		font-size: 4rem;
+	}
+
+	&__box {
+		text-align: center;
+		margin: 1.5em 0;
+		font-size: 2em;
+		color: $black;
+
+		&-title {
+			font-size: 3rem;
+			font-weight: 800;
+		}
+
+		&-links {
+			display: flex;
+			flex-direction: column;
+			padding: 0.8em 0;
+		}
+		
+		&-link {
+			padding: 0.5em 0;
+			color: $black;
+			transition: transform 0.2s;
+		}
+
+		&-link:hover {
+			transform: scale(0.9);
+		}
+	}
+
+	&__bottom-text {
+		font-size: 1.6rem;
+		text-align: center;
+		padding: 1em;
+	}
 }
