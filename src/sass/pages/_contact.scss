@@ -1,0 +1,9 @@
+@use "../utilities/utilities.scss" as *;
+
+.header-contact {
+	@include header("../../../dist/img/headerContact_Big.jpg", 60vh);
+}
+
+.contact__header-text{
+    font-size: 3rem;
+}

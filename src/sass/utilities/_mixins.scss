@@ -1,0 +1,11 @@
+@mixin header($bgImg, $height) {
+    position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: $height;
+	background-image: url($bgImg);
+	background-size: cover;
+	background-position: center;
+	z-index: -10;
+}

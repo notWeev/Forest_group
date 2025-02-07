@@ -26,38 +26,43 @@
 		position: absolute;
 		width: 100%;
 		height: 6px;
-		background-color: $white;
-		border: 1px solid $black;
+		background-color: $black;
 		border-radius: 5px;
 		top: 18px;
 		left: -50%;
 		transform: translateX(50%);
-		transition: transform 0.3s, display 0.3s;
+		transition: transform 0.3s, opacity 0.2s;
 
 		&-top {
 			top: 5px;
 		}
 
+		&-middle {
+			opacity: 1;
+		}
+		
 		&-bottom {
 			top: 30px;
 		}
 	}
-
+	
 	&--active {
 		.burger-btn__bars {
+			background-color: $black;
 			border: 1px solid transparent;
 			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
+			
 			&-top {
-				transform: translate(50%, 210%) rotate(-45deg);
+				transform: translate(50%, 210%) rotate(-135deg);
 			}
-
+			
 			&-middle {
-				display: none;
+				transform: translateX(60%);
+				opacity: 0;
 			}
 
 			&-bottom {
-				transform: translate(50%, -210%) rotate(45deg);
+				transform: translate(50%, -210%) rotate(135deg);
 			}
 		}
 	}
@@ -73,16 +78,18 @@
 		top: 0;
 		left: 0;
 		padding: 0.8em;
-		background-color: $white;
+		background-color: #fff;
 		width: 100%;
 		font-size: 3rem;
-		box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+		box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+			rgba(0, 0, 0, 0.23) 0px 6px 6px;
+		transition: backdrop-filter 0.3s, background-color 0.3s;
 		z-index: 10;
 
 		&-link {
 			color: $black;
 			font-weight: 800;
-			transition: color .3s;
+			transition: color 0.3s;
 		}
 
 		&-link:hover {
@@ -100,8 +107,9 @@
 		align-items: center;
 		width: 100%;
 		height: 100vh;
-		background-color: $main-color;
-		transform: translateX(-100%);
+		background-color: #ddd4d4a1;
+		backdrop-filter: blur(6px);
+		transform: translateX(100%);
 		transition: transform 0.3s;
 		z-index: 100;
 
@@ -112,8 +120,9 @@
 			margin: 1em 0;
 			padding: 0.5em 1em;
 			width: 200px;
-			color: $white;
-			border-bottom: 1px solid $white;
+			font-weight: 600;
+			color: $black;
+			border-bottom: 3px solid $main-color;
 			font-size: 3rem;
 
 			&:focus {
@@ -127,4 +136,9 @@
 			transform: translateX(0);
 		}
 	}
+}
+
+.shadow-bg {
+	background-color: #ffffff83;
+	backdrop-filter: blur(4px);
 }

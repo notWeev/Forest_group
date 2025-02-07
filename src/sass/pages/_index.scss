@@ -1,15 +1,7 @@
 @use "../utilities/utilities.scss" as *;
 
 .header {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 75vh;
-	background-image: url("../../../dist/img/heroBg_small.jpg");
-	background-size: cover;
-	background-position: center;
-	z-index: -10;
+	@include header('../../../dist/img/heroBg_small.jpg', 75vh);
 
 	&__text-box {
 		text-align: center;
@@ -204,7 +196,7 @@
 	}
 
 	&__card:hover {
-		transform: scale(1.1);
+		transform: scale(1.05);
 	}
 
 	&__link {
