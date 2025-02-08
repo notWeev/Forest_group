@@ -2,12 +2,11 @@ const navMobile = document.querySelector(".nav__mobile");
 const navMobileLinks = document.querySelectorAll(".nav__moblie-link");
 const burgerBtn = document.querySelector(".burger-btn");
 const navBg = document.querySelector(".nav__logo");
+const footerYear = document.querySelector(".footer__year");
 
 const showMobileNav = () => {
 	navMobile.classList.toggle("nav__mobile--active");
 	burgerBtn.classList.toggle("burger-btn--active");
-
-	
 };
 
 const handleShadow = () => {
@@ -20,6 +19,12 @@ const handleShadow = () => {
 	});
 };
 handleShadow();
+
+const handleCurrentYear = () => {
+	const newYear = new Date().getFullYear();
+	footerYear.innerText = newYear;
+};
+handleCurrentYear();
 
 burgerBtn.addEventListener("click", showMobileNav);
 navMobileLinks.forEach((link) => {

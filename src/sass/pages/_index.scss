@@ -87,6 +87,7 @@
 	background-image: url("../../../dist/img/adventureBg_small.jpg");
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 	z-index: -5;
 
 	&__hero-shadow {

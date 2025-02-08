@@ -57,7 +57,31 @@
 		<!-- Main section -->
 		<main class="main">
 			<div class="wrapper">
-				<div class="section-title">Kontakt</div>
+				<div class="section-title contact__section-title">Kontakt</div>
+				<div class="contact__box">
+					<form class="contact__form">
+						<div class="contact__form-box">
+							<label for="name" class="contact__form-label">Imie:</label>
+							<input type="text" id="name" name="name" class="contact__form-input" required>
+						</div>
+						<div class="contact__form-box">
+							<label for="email" class="contact__form-label">Email:</label>
+							<input type="email" id="email" name="email" class="contact__form-input" required>
+						</div>
+						<div class="contact__form-box">
+							<label for="msg" class="contact__form-label">Wiadomość:</label>
+							<textarea name="msg" id="msg" class="contact__form-textarea" required></textarea>
+						</div>
+						
+						<input type="checkbox" id="policy" class="contact__form-checkbox">
+						<label for="policy" class="contact__form-label">Zaznacz, jeżeli akceptujesz oraz zapoznałeś się z naszą <a href="./policy.html" class="offers__link link-animation">Polityką prywatności</a></label>
+
+						<button class="offers__card-btn btn-animation contact__form-btn">Wyślij</button>
+
+					</form>
+	
+					<p class="contact__msg-status">chuj</p>
+				</div>
 			</div>
 		</main>
 
