@@ -1,7 +1,7 @@
 @use "../utilities/utilities.scss" as *;
 
 .header {
-	@include header('../../../dist/img/heroBg_small.jpg', 75vh);
+	@include header("../img/heroBg_small.jpg", 75vh);
 
 	&__text-box {
 		text-align: center;
@@ -29,9 +29,11 @@
 
 .section-title {
 	position: relative;
+	margin-bottom: 0.5em;
 	font-size: 3rem;
 	text-transform: uppercase;
 	font-weight: 400;
+	font-size: 4rem;
 	text-align: center;
 
 	&::before {
@@ -47,7 +49,7 @@
 }
 
 .aboutus {
-	padding: 4em 2em;
+	padding: 4em 3em;
 
 	&__box {
 		display: flex;
@@ -59,19 +61,19 @@
 
 	&__img {
 		display: block;
-		width: 100%;
+		width: 80%;
 		margin: 2em 0;
 	}
 
 	&__heading {
-		font-size: 2rem;
-		margin-bottom: 0.8em;
+		font-size: 2.5rem;
+		margin: 1em 0;
 		color: $main-color;
 	}
 
 	&__text {
-		font-size: 1.5rem;
-		line-height: 24px;
+		font-size: 1.8rem;
+		line-height: 26px;
 		margin: 0.5em 0;
 	}
 }
@@ -84,7 +86,7 @@
 	height: 200px;
 	width: 100%;
 	padding: 2em;
-	background-image: url("../../../dist/img/adventureBg_small.jpg");
+	background-image: url("../img/adventureBg_small.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -102,7 +104,7 @@
 
 	&__text {
 		text-align: center;
-		font-size: 2.2rem;
+		font-size: 2.4rem;
 		color: $white;
 		font-weight: 600;
 		border: 1px solid $main-color;
@@ -118,7 +120,7 @@
 		margin: 2.5em 0;
 		font-size: 2rem;
 		font-weight: 500;
-		line-height: 25px;
+		line-height: 30px;
 	}
 
 	&__card-box {
@@ -164,7 +166,8 @@
 		}
 
 		&-description {
-			margin: 0 auto;
+			font-size: 2rem;
+			margin: 0.4em auto;
 		}
 		&-description .fa-check {
 			color: rgb(95, 199, 25);
@@ -210,3 +213,99 @@
 		}
 	}
 }
+
+@media (min-width: 576px) {
+	.aboutus {
+		&__heading {
+			font-size: 2.8rem;
+		}
+
+		&__text {
+			font-size: 2rem;
+		}
+	}
+
+	.adventure {
+		height: 250px;
+
+		&__text {
+			font-size: 3rem;
+		}
+	}
+
+	.offers {
+		&__text {
+			font-size: 2.5rem;
+		}
+
+		&__card {
+			width: 70%;
+
+			&-title {
+				font-size: 3.5rem;
+			}
+
+			&-price {
+				font-size: 4.5rem;
+			}
+
+			&-description {
+				font-size: 2.5rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		&__heading-name {
+			font-size: 4.8rem;
+		}
+
+		&__heading-text {
+			font-size: 5.4rem;
+		}
+	}
+
+	.section-title {
+		font-size: 5rem;
+	}
+
+	.aboutus {
+		&__heading {
+			font-size: 3.8em;
+		}
+
+		&__text {
+			font-size: 2.5em;
+			line-height: 40px;
+		}
+	}
+
+	.adventure {
+		height: 300px;
+
+		&__text {
+			font-size: 4rem;
+		}
+	}
+
+	.offers {
+		&__card {
+			width: 60%;
+
+			&-btn {
+				margin: 2.5em auto;
+				padding: 0.8em 2.6em;
+			}
+		}
+
+		&__text {
+			font-size: 2.8em;
+		}
+	}
+}
+
+// @media (min-width: 992px) {
+
+// }

@@ -23,7 +23,9 @@
 			<div class="header__hero-shadow"></div>
 			<div class="wrapper">
 				<div class="header__text-box">
-					<h2 class="header__heading-text contact__header-text">Jeżeli masz dodatkowe pytania, napisz do nas.</h2>
+					<h2 class="header__heading-text contact__header-text">
+						Jeżeli masz dodatkowe pytania, napisz do nas.
+					</h2>
 				</div>
 			</div>
 		</header>
@@ -35,24 +37,49 @@
 					<form class="contact__form">
 						<div class="contact__form-box">
 							<label for="name" class="contact__form-label">Imie:</label>
-							<input type="text" id="name" name="name" class="contact__form-input" required>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								class="contact__form-input"
+								required />
 						</div>
 						<div class="contact__form-box">
 							<label for="email" class="contact__form-label">Email:</label>
-							<input type="email" id="email" name="email" class="contact__form-input" required>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								class="contact__form-input"
+								required />
 						</div>
 						<div class="contact__form-box">
 							<label for="msg" class="contact__form-label">Wiadomość:</label>
-							<textarea name="msg" id="msg" class="contact__form-textarea" required></textarea>
+							<textarea
+								name="msg"
+								id="msg"
+								class="contact__form-textarea"
+								required></textarea>
 						</div>
-						
-						<input type="checkbox" id="policy" class="contact__form-checkbox">
-						<label for="policy" class="contact__form-label">Zaznacz, jeżeli akceptujesz oraz zapoznałeś się z naszą <a href="./policy.html" class="offers__link link-animation">Polityką prywatności</a></label>
-
-						<button class="offers__card-btn btn-animation contact__form-btn">Wyślij</button>
-
+						<div class="contact__policy-box">
+							<input
+								type="checkbox"
+								id="policy"
+								class="contact__form-checkbox" />
+							<label for="policy" class="contact__form-label"
+								>Zaznacz, jeżeli akceptujesz oraz zapoznałeś się z naszą
+								<a
+									href="./policy.html"
+									class="offers__link link-animation contact__form-link"
+									>Polityką prywatności</a
+								></label
+							>
+						</div>
+						<button class="offers__card-btn contact__form-btn btn-animation">
+							Wyślij
+						</button>
 					</form>
-	
+
 					<p class="contact__msg-status">chuj</p>
 				</div>
 			</div>

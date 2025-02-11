@@ -15,7 +15,7 @@
 		align-items: center;
 	}
 
-	&__box-company {
+	&__box-name {
 		margin: 1em 0;
 		color: $main-color;
 		font-size: 4rem;
@@ -35,11 +35,12 @@
 		&-links {
 			display: flex;
 			flex-direction: column;
-			padding: 0.8em 0;
+			margin: 0.8em 0;
 		}
-		
+
 		&-link {
-			padding: 0.5em 0;
+			padding: 0.6em 1.4em;
+			margin: 0.5em auto;
 			color: $black;
 			transition: transform 0.2s;
 		}
@@ -53,5 +54,29 @@
 		font-size: 1.6rem;
 		text-align: center;
 		padding: 1em;
+	}
+}
+
+@media (min-width: 768px) {
+	.footer {
+		&__box {
+			&-name {
+				margin: 1.5em 0;
+				font-size: 5rem;
+			}
+
+			&-title {
+				font-size: 4rem;
+			}
+
+			&-link {
+				font-size: 2.5rem;
+				padding: 0.8em 1.6em;
+			}
+		}
+
+		&__bottom-text {
+			font-size: 2rem;
+		}
 	}
 }

@@ -1,7 +1,7 @@
 const navMobile = document.querySelector(".nav__mobile");
-const navMobileLinks = document.querySelectorAll(".nav__moblie-link");
+const navMobileLinks = document.querySelectorAll(".nav__mobile-link");
 const burgerBtn = document.querySelector(".burger-btn");
-const navBg = document.querySelector(".nav__logo");
+const navBg = document.querySelector(".nav");
 const footerYear = document.querySelector(".footer__year");
 
 const showMobileNav = () => {

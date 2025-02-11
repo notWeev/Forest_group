@@ -1,88 +1,117 @@
 @use "../utilities/utilities.scss" as *;
 
 .header-contact {
-	@include header("../../../dist/img/headerContact_Big.jpg", 60vh);
+	@include header("../img/headerContact_Big.jpg", 60vh);
 }
 
 .contact {
-    &__header-text{
-        font-size: 3rem;
-    }
+	&__header-text {
+		font-size: 3rem;
+	}
 
-    &__section-title{
-        margin: 2em;
-    }
+	&__section-title {
+		margin: 2em;
+	}
 
-    &__box {
-        position: relative;
+	&__box {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 4em;
+	}
+
+    &__policy-box {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 4em;
+        justify-content: start;
+        margin: 1em auto;
     }
 
-    &__form {
-        padding: 3em;
-        width: 400px;
-        border: 1px solid $black;
-        border-radius: 24px;
+	&__form {
+		padding: 3em;
+		min-width: 400px;
+		width: 80%;
+		border: 1px solid $black;
+		border-radius: 24px;
 
-        &-box {
-            display: flex;
-            flex-direction: column;
-            margin: 4em 0;
+
+		&-box {
+			display: flex;
+			flex-direction: column;
+			margin: 4em 0;
+		}
+
+		&-label {
+			margin-bottom: 1em;
+			font-size: 2.2em;
+		}
+
+		&-input,
+		&-textarea {
+			padding: 0.8em;
+			font-size: 1.8rem;
+		}
+
+		&-textarea {
+			min-height: 200px;
+		}
+
+        &-link {
+            text-wrap: nowrap;
         }
 
-        &-label {
-            margin-bottom: 1em;
-            font-size: 2.2em;
-        }
+		&-checkbox {
+            display: block;
+			width: 50px;
+			height: 18px;
+			margin: 0.5em;
+            accent-color: $main-color;
+		}
 
-        &-input, &-textarea {
-            padding: 0.8em;
-            font-size: 1.8rem;
-        }
+		&-btn {
+			margin-top: 2em;
+			padding: 1em 2em;
+			color: $white;
+			background-color: $secondary-color;
+			border: 1px solid #00000060;
+		}
+	}
 
-        &-textarea {
-            min-height: 200px;
-        }
 
-        &-checkbox {
-            width: 18px;
-            height: 18px;
-            margin: 0.5em;
-        }
-
-        &-btn {
-            color: $white;
-            background-color: $secondary-color;
-            border: 1px solid #00000060;
-        }
-    }
-
-    &__msg-status {
-        display: none;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 30%;
-        margin: 2em;
-        padding: 3em;
-        width: 300px;
-        border-radius: 12px;
-        font-size: 2.4em;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
+	&__msg-status {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 30%;
+		margin: 2em;
+		padding: 3em;
+		width: 300px;
+		border-radius: 12px;
+		font-size: 2.4em;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
 }
 
 .success {
-    display: flex;
-    background-color: hsl(143, 83%, 55%);
+	display: flex;
+	background-color: hsl(143, 83%, 55%);
 }
 
 .error {
-    display: flex;
-    background-color: hsl(9, 100%, 64%);
+	display: flex;
+	background-color: hsl(9, 100%, 64%);
 }
 
+@media (min-width: 576px) {
+	.contact {
+		&__header-text {
+			font-size: 4rem;
+		}
 
+		&__form-btn {
+            padding: 0.8em 2.4em;
+            font-size: 2.5rem;
+		}
+	}
+}
