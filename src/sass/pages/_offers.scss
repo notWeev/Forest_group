@@ -1,6 +1,13 @@
+@use "../utilities/utilities.scss" as *;
+
 .main {
-    .more-offers {
-           margin-top: 10em;
-           padding: 4em 2em;
-    }
+	.more-offers {
+		margin-top: 10em;
+		padding: 4em 2em;
+
+		&__card {
+			background: $card-offers;
+
+		}
+	}
 }

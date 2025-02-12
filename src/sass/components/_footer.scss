@@ -62,21 +62,54 @@
 		&__box {
 			&-name {
 				margin: 1.5em 0;
-				font-size: 5rem;
-			}
-
-			&-title {
 				font-size: 4rem;
 			}
 
 			&-link {
-				font-size: 2.5rem;
+				font-size: 2rem;
 				padding: 0.8em 1.6em;
 			}
 		}
 
 		&__bottom-text {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.footer {
+		&__boxes {
+			flex-direction: row;
+			align-items: start;
+		}
+
+		&__box-name {
+			// margin-right: 1em;
+			font-size: 5rem;
+		}
+
+		&__box {
+			margin: 3em 2em 2em;
+			
+			&-link {
+				margin: 0.2em auto;
+			}
+		}
+
+		&__bottom-text {
 			font-size: 2rem;
+		}
+
+	}
+}
+
+
+
+@media (min-width: 1200px) {
+	.footer {
+		&__box-name {
+			margin-right: 3em;
 		}
 	}
 }

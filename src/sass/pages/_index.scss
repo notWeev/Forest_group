@@ -134,6 +134,7 @@
 		margin: 4em 0;
 		padding: 1em;
 		width: 80%;
+		max-width: 320px;
 		min-height: 400px;
 		background-color: $secondary-color;
 		color: $white;
@@ -150,7 +151,7 @@
 		}
 
 		&-price {
-			margin: 0.8em 0;
+			margin: 0.6em 0;
 			text-align: center;
 			font-size: 4rem;
 			font-weight: bold;
@@ -167,7 +168,7 @@
 
 		&-description {
 			font-size: 2rem;
-			margin: 0.4em auto;
+			margin: 0.3em auto;
 		}
 		&-description .fa-check {
 			color: rgb(95, 199, 25);
@@ -235,22 +236,23 @@
 
 	.offers {
 		&__text {
-			font-size: 2.5rem;
+			font-size: 2.2rem;
 		}
 
 		&__card {
-			width: 70%;
+			width: 55%;
+			padding: 0.5em 1em;
 
 			&-title {
-				font-size: 3.5rem;
+				font-size: 2.8rem;
 			}
 
 			&-price {
-				font-size: 4.5rem;
+				font-size: 3.5rem;
 			}
 
 			&-description {
-				font-size: 2.5rem;
+				font-size: 1.8rem;
 			}
 		}
 	}
@@ -258,27 +260,24 @@
 
 @media (min-width: 768px) {
 	.header {
+		background-image: url('../img/heroBg_big.jpg');
 		&__heading-name {
-			font-size: 4.8rem;
+			font-size: 3rem;
 		}
 
 		&__heading-text {
-			font-size: 5.4rem;
+			font-size: 4rem;
 		}
-	}
-
-	.section-title {
-		font-size: 5rem;
 	}
 
 	.aboutus {
 		&__heading {
-			font-size: 3.8em;
+			font-size: 3rem;
 		}
 
 		&__text {
-			font-size: 2.5em;
-			line-height: 40px;
+			font-size: 2em;
+			line-height: 35px;
 		}
 	}
 
@@ -291,21 +290,102 @@
 	}
 
 	.offers {
+
+		&__card-box {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
 		&__card {
-			width: 60%;
+			width: 55%;
+			margin: 4em 2em;
+
+			&-title {
+				font-size: 3rem;
+			}
+			&-price {
+				font-size: 4rem;
+				margin: 0.5em auto;
+			}
+
+			&-description {
+				font-size: 2rem;
+			}
 
 			&-btn {
-				margin: 2.5em auto;
+				margin: 1.5em auto;
 				padding: 0.8em 2.6em;
 			}
 		}
 
 		&__text {
-			font-size: 2.8em;
+			font-size: 2.4em;
 		}
 	}
 }
 
-// @media (min-width: 992px) {
+@media (min-width: 992px) {
+	.header {
+		&__heading-name {
+			font-size: 4rem;
+		}
 
-// }
+		&__heading-text {
+			font-size: 5rem;
+		}
+	}
+
+	.aboutus {
+		&__box {
+			flex-direction: row;
+		}	
+
+		&__img {
+			width: 50%;
+			padding: 2em;
+		}
+
+		&__text-box {
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+			padding: 1em;
+			margin-left: 2.5em;
+		}
+	}
+
+	.adventure {
+		height: 400px;
+		background-image: url("../img/adventureBg_big.jpg");
+
+		&__text {
+			font-size: 5rem;
+		}
+	}
+
+	.offers {
+
+		&__card {
+			width: 35%;
+			max-width: 350px;
+
+			&-description {
+				margin: .2em auto;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.offers {
+		&__card-box {
+			flex-wrap: nowrap;
+		}
+
+		&__card {
+			width: 30%;
+			max-width: 350px;
+			margin: 4em 3em;
+		}
+	}
+}

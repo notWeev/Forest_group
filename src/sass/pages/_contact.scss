@@ -67,10 +67,16 @@
 			margin: 0.5em;
             accent-color: $main-color;
 		}
+		
+		&-policy {
+			font-size: 1.8rem;
+			line-height: 25px;
+		}
 
 		&-btn {
 			margin-top: 2em;
-			padding: 1em 2em;
+			padding: 0.8em 1.6em;
+			font-size: 2.5rem;
 			color: $white;
 			background-color: $secondary-color;
 			border: 1px solid #00000060;
@@ -106,12 +112,21 @@
 @media (min-width: 576px) {
 	.contact {
 		&__header-text {
-			font-size: 4rem;
+			font-size: 3.5rem;
 		}
 
 		&__form-btn {
-            padding: 0.8em 2.4em;
+            padding: 0.6em 2em;
             font-size: 2.5rem;
 		}
 	}
 }
+
+@media (min-width: 992px) {
+	.contact {
+		&__header-text {
+			font-size: 4rem;
+		}
+	}
+}
+
