@@ -5,12 +5,14 @@
 }
 
 .contact {
+	padding: 4em 2em;
+
 	&__header-text {
 		font-size: 3rem;
 	}
 
 	&__section-title {
-		margin: 2em;
+		margin: 1em 0;
 	}
 
 	&__box {
@@ -28,8 +30,8 @@
     }
 
 	&__form {
-		padding: 3em;
-		min-width: 400px;
+		padding: 1em 4em;
+		min-width: 350px;
 		width: 80%;
 		border: 1px solid $black;
 		border-radius: 24px;
@@ -62,9 +64,9 @@
 
 		&-checkbox {
             display: block;
-			width: 50px;
+			width: 35px;
 			height: 18px;
-			margin: 0.5em;
+			margin: 0.3em;
             accent-color: $main-color;
 		}
 		
@@ -97,6 +99,43 @@
 		font-size: 2.4em;
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	}
+
+	&__info-boxes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 6em;
+	}
+
+	&__info-box {
+		margin: 3em auto;
+	}
+	
+	&__info-link {
+		font-size: 2.2rem;
+		font-weight: 600;
+		color: $main-color;
+		transition: color 0.3s;
+	}
+	
+	&__info-link:hover {
+		color: $secondary-color;
+	}
+
+	&__map-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 3em 0 6em;
+	}
+
+	&__map {
+		width: 80%;
+		height: 300px;
+		border: 1px solid $secondary-color;
+		border-radius: 5px;
+	}
 }
 
 .success {
@@ -119,6 +158,14 @@
             padding: 0.6em 2em;
             font-size: 2.5rem;
 		}
+
+		&__map {
+			height: 400px;
+		}
+
+		&__info-link {
+			font-size: 2.2rem;
+		}
 	}
 }
 
@@ -126,6 +173,18 @@
 	.contact {
 		&__header-text {
 			font-size: 4rem;
+		}
+
+		&__map {
+			height: 450px;	
+		}
+
+		&__info-boxes {
+			flex-direction: row;
+		}
+
+		&__info-link {
+			font-size: 2.5rem;
 		}
 	}
 }

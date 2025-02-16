@@ -6,8 +6,26 @@
 		padding: 4em 2em;
 
 		&__card {
-			background: $card-offers;
+			background: $secondary-color;
+			color: $white;
+			border: 1px solid $secondary-color;
+
+			&-description--off {
+				color: #d6d6d6;
+			}
+
+			&-btn {
+				background-color: $white;
+				color: $black;
+
+				&:hover {
+					color: $white;
+				}
+			}
+
 
 		}
+
+
 	}
 }

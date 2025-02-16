@@ -140,11 +140,12 @@
 			transform: translateX(0);
 		}
 	}
+	&__shadow-bg {
+		background-color: #000000a2;
+		backdrop-filter: blur(6px);
+	}
 }
 
-.shadow-bg {
-	background-color: #000000a2;
-}
 
 @media (min-width: 576px) {
 	.nav {
@@ -217,6 +218,11 @@
 				color: $white;
 				background-color: $black;
 			}
+		}
+
+		&__shadow-bg {
+			background-color: #ffffff91;
+			backdrop-filter: blur(6px);
 		}
 	}
 }

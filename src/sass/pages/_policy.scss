@@ -1,0 +1,56 @@
+.main {
+	margin-top: 15em;
+}
+
+.policy {
+	margin: 6em 4em;
+	padding: 0 1em;
+	max-width: 1000px;
+
+	&__main-list {
+		list-style-type: upper-roman;
+		text-align: left;
+	}
+
+	&__main-text {
+		margin: 2em 0 0.8em 0.5em;
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+
+	&__secondary-text {
+		margin-left: 1.5em;
+		margin-bottom: 0.8em;
+		font-size: 1.5rem;
+		font-weight: normal;
+		line-height: 22px;
+	}
+
+	&__normal-text {
+		font-size: 1.5rem;
+		font-weight: normal;
+		margin: 1em 0;
+	}
+
+	&__third-text {
+		list-style: inside;
+	}
+}
+
+@media (min-width: 768px) {
+	.policy {
+		&__main-text {
+			font-size: 3rem;
+		}
+
+		&__secondary-text {
+			font-size: 2rem;
+		}
+
+		&__normal-text {
+			font-size: 1.8rem;
+			font-weight: normal;
+			margin: 1em 0;
+		}
+	}
+}

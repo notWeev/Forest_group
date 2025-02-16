@@ -12,9 +12,9 @@ const showMobileNav = () => {
 const handleShadow = () => {
 	window.addEventListener("scroll", () => {
 		if (window.scrollY > 50) {
-			navBg.classList.add("shadow-bg");
+			navBg.classList.add("nav__shadow-bg");
 		} else {
-			navBg.classList.remove("shadow-bg");
+			navBg.classList.remove("nav__shadow-bg");
 		}
 	});
 };

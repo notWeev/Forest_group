@@ -136,8 +136,9 @@
 		width: 80%;
 		max-width: 320px;
 		min-height: 400px;
-		background-color: $secondary-color;
-		color: $white;
+		background-color: $white;
+		color: $black;
+		border: 1px solid #d1d0d0;
 		border-radius: 15px;
 		box-shadow: rgba(0, 0, 0, 0.418) 0px 10px 30px,
 			rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -175,7 +176,7 @@
 		}
 
 		&-description--off {
-			color: #ddd;
+			color: #696969;
 		}
 
 		&-btn {
@@ -186,13 +187,10 @@
 			padding: 0.5em 1em;
 			border: 1px solid $white;
 			border-radius: 8px;
-			background-color: $white;
+			background-color: $secondary-color;
 			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 			transition: color 0.2s;
-
-			&:hover {
-				color: $white;
-			}
+			color: $white;
 
 			&::before {
 				background-color: $main-color;

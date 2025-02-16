@@ -32,55 +32,86 @@
 		<!-- Main section -->
 		<main class="main">
 			<div class="wrapper">
-				<div class="section-title contact__section-title">Kontakt</div>
-				<div class="contact__box">
-					<form class="contact__form">
-						<div class="contact__form-box">
-							<label for="name" class="contact__form-label">Imie:</label>
-							<input
-								type="text"
-								id="name"
-								name="name"
-								class="contact__form-input"
-								required />
-						</div>
-						<div class="contact__form-box">
-							<label for="email" class="contact__form-label">Email:</label>
-							<input
-								type="email"
-								id="email"
-								name="email"
-								class="contact__form-input"
-								required />
-						</div>
-						<div class="contact__form-box">
-							<label for="msg" class="contact__form-label">Wiadomość:</label>
-							<textarea
-								name="msg"
-								id="msg"
-								class="contact__form-textarea"
-								required></textarea>
-						</div>
-						<div class="contact__policy-box">
-							<input
-								type="checkbox"
-								id="policy"
-								class="contact__form-checkbox" />
-							<label for="policy" class="contact__form-label contact__form-policy"
-								>Zaznacz, jeżeli akceptujesz oraz zapoznałeś się z naszą
-								<a
-									href="./policy.html"
-									class="offers__link link-animation contact__form-link"
-									>Polityką prywatności</a
-								></label
-							>
-						</div>
-						<button class="offers__card-btn contact__form-btn btn-animation">
-							Wyślij
-						</button>
-					</form>
+				<section class="contact">
+					<div class="section-title contact__section-title">Kontakt</div>
+					<div class="contact__box">
+						<form class="contact__form">
+							<div class="contact__form-box">
+								<label for="name" class="contact__form-label">Imie:</label>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									class="contact__form-input"
+									required />
+							</div>
+							<div class="contact__form-box">
+								<label for="email" class="contact__form-label">Email:</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									class="contact__form-input"
+									required />
+							</div>
+							<div class="contact__form-box">
+								<label for="msg" class="contact__form-label">Wiadomość:</label>
+								<textarea
+									name="msg"
+									id="msg"
+									class="contact__form-textarea"
+									required></textarea>
+							</div>
+							<div class="contact__policy-box">
+								<input
+									type="checkbox"
+									id="policy"
+									class="contact__form-checkbox" />
+								<label
+									for="policy"
+									class="contact__form-label contact__form-policy"
+									>Zaznacz, jeżeli akceptujesz oraz zapoznałeś się z naszą
+									<a
+										href="./policy.html"
+										class="offers__link link-animation contact__form-link"
+										>Polityką prywatności</a
+									></label
+								>
+							</div>
+							<button class="offers__card-btn contact__form-btn btn-animation">
+								Wyślij
+							</button>
+						</form>
 
-					<p class="contact__msg-status">chuj</p>
+						<p class="contact__msg-status">chuj</p>
+					</div>
+				</section>
+
+				<div class="contact__info-boxes">
+					<div class="contact__info-box">
+						<a href="https://maps.app.goo.gl/h9fKmw4jcHcne4tD8" target="_blank" class="contact__info-link">
+							<i class="fa-solid fa-location-dot"></i> ul. Jasnogórskia 2
+						</a>
+					</div>
+					<div class="contact__info-box">
+						<a href="tel:+48123123123" class="contact__info-link">
+							<i class="fa-solid fa-phone"></i> +48 123 123 123
+						</a>
+					</div>
+					<div class="contact__info-box">
+						<a href="mailto:forestgroup@mail.com" class="contact__info-link">
+							<i class="fa-solid fa-envelope"></i> forestgroup@mail.com
+						</a>
+					</div>
+				</div>
+
+				<div class="contact__map-box">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1279.9465871887162!2d19.892327044968628!3d50.08828689707054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1739388294257!5m2!1spl!2spl"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+						class="contact__map"></iframe>
 				</div>
 			</div>
 		</main>
