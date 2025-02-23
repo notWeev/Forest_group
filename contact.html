@@ -72,36 +72,38 @@
 								<input
 									type="text"
 									id="name"
-									name="name"
+									placeholder="Podaj imię"
 									class="contact__form-input"
 									required />
+								<p class="contact__error-text"></p>
 							</div>
 							<div class="contact__form-box">
 								<label for="email" class="contact__form-label">Email:</label>
 								<input
 									type="email"
 									id="email"
-									name="email"
+									placeholder="Podaj adres mialowy"
 									class="contact__form-input"
 									required />
+								<p class="contact__error-text"></p>
 							</div>
 							<div class="contact__form-box">
 								<label for="msg" class="contact__form-label">Wiadomość:</label>
 								<textarea
-									name="msg"
 									id="msg"
 									class="contact__form-textarea"
 									required></textarea>
+								<p class="contact__error-text"></p>
 							</div>
 							<div class="contact__policy-box">
 								<input
 									type="checkbox"
-									id="policy"
+									id="policy-checkbox"
 									class="contact__form-checkbox" />
 								<label
-									for="policy"
+									for="policy-checkbox"
 									class="contact__form-label contact__form-policy"
-									>Zaznacz, jeżeli akceptujesz oraz zapoznałeś się z naszą
+									>Akceptuję oraz zapoznałem się z naszą
 									<a
 										href="./policy.html"
 										class="offers__link link-animation contact__form-link"
@@ -114,13 +116,16 @@
 							</button>
 						</form>
 
-						<p class="contact__msg-status">chuj</p>
+						<p class="contact__msg-status"></p>
 					</div>
 				</section>
 
 				<div class="contact__info-boxes">
 					<div class="contact__info-box">
-						<a href="https://maps.app.goo.gl/h9fKmw4jcHcne4tD8" target="_blank" class="contact__info-link">
+						<a
+							href="https://maps.app.goo.gl/h9fKmw4jcHcne4tD8"
+							target="_blank"
+							class="contact__info-link">
 							<i class="fa-solid fa-location-dot"></i> ul. Jasnogórskia 2
 						</a>
 					</div>
@@ -187,6 +192,7 @@
 	</p>
 </footer>
 
+		<script src="./dist/js/formScript.min.js"></script>
 		<script src="./dist/js/main.min.js"></script>
 	</body>
 </html>

@@ -23,11 +23,11 @@
 		margin-bottom: 4em;
 	}
 
-    &__policy-box {
-        display: flex;
-        justify-content: start;
-        margin: 1em auto;
-    }
+	&__policy-box {
+		display: flex;
+		justify-content: start;
+		margin: 1em auto;
+	}
 
 	&__form {
 		padding: 1em 4em;
@@ -36,15 +36,23 @@
 		border: 1px solid $black;
 		border-radius: 24px;
 
-
 		&-box {
 			display: flex;
 			flex-direction: column;
 			margin: 4em 0;
 		}
 
+		&-box.error .contact__form-input {
+			border: 1px solid $main-color;
+			background-color: #5a8f645b;
+		}
+
+		&-box.error .contact__error-text {
+			visibility: visible;
+		}
+
 		&-label {
-			margin-bottom: 1em;
+			margin-bottom: 0.5em;
 			font-size: 2.2em;
 		}
 
@@ -58,18 +66,18 @@
 			min-height: 200px;
 		}
 
-        &-link {
-            text-wrap: nowrap;
-        }
+		&-link {
+			text-wrap: nowrap;
+		}
 
 		&-checkbox {
-            display: block;
+			display: block;
 			width: 35px;
 			height: 18px;
 			margin: 0.3em;
-            accent-color: $main-color;
+			accent-color: $main-color;
 		}
-		
+
 		&-policy {
 			font-size: 1.8rem;
 			line-height: 25px;
@@ -85,19 +93,28 @@
 		}
 	}
 
-
 	&__msg-status {
 		display: none;
 		justify-content: center;
 		align-items: center;
+		text-align: center;
 		position: absolute;
 		top: 30%;
-		margin: 2em;
-		padding: 3em;
+		height: 100px;
 		width: 300px;
+		height: 200px;
+		margin: 2em;
+		padding: 1em;
 		border-radius: 12px;
 		font-size: 2.4em;
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+
+	&__error-text {
+		font-size: 1.8rem;
+		margin: 0.5em;
+		color: hsl(9, 100%, 64%);
+		visibility: hidden;
 	}
 
 	&__info-boxes {
@@ -111,14 +128,14 @@
 	&__info-box {
 		margin: 3em auto;
 	}
-	
+
 	&__info-link {
 		font-size: 2.2rem;
 		font-weight: 600;
 		color: $main-color;
 		transition: color 0.3s;
 	}
-	
+
 	&__info-link:hover {
 		color: $secondary-color;
 	}
@@ -138,14 +155,27 @@
 	}
 }
 
-.success {
+.successStatus,
+.errorStatus {
 	display: flex;
+	transform: translateY(-50%);
+	opacity: 0;
+	animation: msgShow 0.5s forwards;
+}
+
+.successStatus {
 	background-color: hsl(143, 83%, 55%);
 }
 
-.error {
-	display: flex;
+.errorStatus {
 	background-color: hsl(9, 100%, 64%);
+}
+
+@keyframes msgShow {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 @media (min-width: 576px) {
@@ -155,8 +185,8 @@
 		}
 
 		&__form-btn {
-            padding: 0.6em 2em;
-            font-size: 2.5rem;
+			padding: 0.6em 2em;
+			font-size: 2.5rem;
 		}
 
 		&__map {
@@ -176,7 +206,7 @@
 		}
 
 		&__map {
-			height: 450px;	
+			height: 450px;
 		}
 
 		&__info-boxes {
@@ -188,4 +218,3 @@
 		}
 	}
 }
-
