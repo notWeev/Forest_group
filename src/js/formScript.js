@@ -39,8 +39,6 @@ const checkMail = (email) => {
 	}
 };
 
-const CheckCheckbox = () => {};
-
 const checkErrors = () => {
 	const allInputs = document.querySelectorAll(".contact__form-box");
 	let errorCount = 0;

@@ -2,8 +2,8 @@
 
 .burger-btn {
 	position: fixed;
-	right: 20px;
-	top: 9px;
+	right: 14px;
+	top: 5px;
 	width: 70px;
 	height: 70px;
 	padding: 1em;
@@ -75,7 +75,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 90px;
+	height: 80px;
 	background-color: #000000e5;
 	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
 		rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -208,21 +208,11 @@
 				transition: background-color .3s, color .3s;
 			}
 
-			&-link:hover {
-				color: $white;
-				background-color: $black;
-			}
-
-			&-link:focus {
+			&-link:hover, &-link--active{
 				outline: none;
 				color: $white;
 				background-color: $black;
 			}
-		}
-
-		&__shadow-bg {
-			background-color: #ffffff91;
-			backdrop-filter: blur(6px);
 		}
 	}
 }
